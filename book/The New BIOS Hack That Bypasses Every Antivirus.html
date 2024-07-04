@@ -1,0 +1,50 @@
+ <!-- Button tag starts from here -->
+ <button type="button" 
+ onclick="alert('https://www.youtube.com/watch?v=2QFJLszvDwg')">
+Youtube video link
+</button>
+<!-- Button tag ends here -->
+
+<H1>Who is Vulnerable to the LogoFail Exploit?</H1>
+
+<H2>Introduction</H2>
+The LogoFail exploit is a significant threat to computer security, targeting the BIOS firmware of many systems. Understanding which systems are vulnerable and which are protected is crucial for taking appropriate security measures. This article delves into the details of who is vulnerable to the LogoFail exploit and what can be done to mitigate the risk.
+
+<H2>Vulnerable Systems</H2>
+<H3>Most Windows PCs</H3>
+<ul>
+    <li><strong>BIOS/UEFI Systems:</strong> The majority of Windows PCs using BIOS/UEFI firmware are at risk. This includes both custom-built and pre-built systems from various manufacturers.</li>
+    <li><strong>Older Systems:</strong> Systems that have not received recent BIOS firmware updates are particularly vulnerable.</li>
+</ul>
+
+<H3>Systems without Secure Boot or Intel Boot Guard</H3>
+<ul>
+    <li><strong>EFI Partition Vulnerabilities:</strong> Many systems do not have adequate protections for the EFI partition, allowing malicious image files to bypass security checks.</li>
+    <li><strong>Inadequate Firmware Update Security:</strong> Systems that do not fully verify BIOS update files can be compromised through manipulated updates.</li>
+</ul>
+
+<H2>Systems Not Vulnerable</H2>
+<H3>Apple Macs</H3>
+<ul>
+    <li><strong>Apple Silicon Macs:</strong> These do not use UEFI, thus they are immune to the LogoFail exploit.</li>
+    <li><strong>Intel-based Macs:</strong> These have image files hard-coded with additional checks, preventing tampering.</li>
+</ul>
+
+<H3>Certain Dell Devices</H3>
+<ul>
+    <li><strong>Intel Boot Guard Configuration:</strong> Some Dell systems use Intel Boot Guard configured to check image files, providing an extra layer of security that blocks the exploit.</li>
+</ul>
+
+<H3>MSI Motherboards</H3>
+<ul>
+    <li><strong>Signed Image Blocks:</strong> MSI motherboards generally do not allow user logo changes and include the logo in the signed block of Intel Boot Guard, making them secure against LogoFail.</li>
+</ul>
+
+<H2>General Advice</H2>
+<ul>
+    <li><strong>Assume Vulnerability:</strong> If your system does not fall into the categories of Macs, specific Dell devices, or MSI motherboards with the mentioned protections, it is safer to assume that it is vulnerable to the LogoFail exploit.</li>
+    <li><strong>Update BIOS Firmware:</strong> The best defense is to ensure that your BIOS firmware is up-to-date with the latest security patches from your system manufacturer. Most manufacturers have released patches for LogoFail by early Q1 2024.</li>
+</ul>
+
+<H2>Conclusion</H2>
+Given the wide range of systems that are vulnerable to the LogoFail exploit, it is crucial for users to stay informed and proactive about their system's security. Regularly updating BIOS firmware and being aware of the specific security measures your system employs can significantly reduce the risk of falling victim to this sophisticated exploit.
